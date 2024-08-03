@@ -26,18 +26,17 @@ Projeto de sistema de imóveis incluido com painel admin, recuperação de senha
    ```
     preencha as sessões de DB e MAIL com suas informações
 
-6. **Realize as migrations e os seeders**
+5. **Realize as migrations e os seeders**
     ```bash
     php artisan migrate
     php artisan db:seed
 
-7. **Crie link para as imagens**
-
+6. **Crie link para as imagens**
    ```bash
    php artisan storage:link
 
-8. **Inicialize o projeto**
+7. **Inicialize o projeto**
     ```bash
     php artisan serve
-
+    ```
    
