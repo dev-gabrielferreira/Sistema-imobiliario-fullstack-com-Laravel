@@ -97,7 +97,7 @@ class PerfilController extends Controller
             return back()->with("erro", "Falha ao recuperar senha");
         }
 
-        if(!Mail::to('gabrielf.04.2002@gmail.com')
+        if(!Mail::to(env('MAIL_FROM_ADDRESS'))
         ->send(new ResetPasswordMailable(["senha" => $novaSenha]))){
             return back()->with("erro", "Falha ao recuperar senha");
         }
