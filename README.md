@@ -18,6 +18,11 @@ Projeto de sistema de imóveis incluido com painel admin, recuperação de senha
    composer install
 
 4. **Crie o arquivo `.env` a partir do exemplo:**
+
+   ```bash
+   touch .env
+   cp .env.example .env
+   ```
     preencha as sessões de DB e MAIL com suas informações
 
 6. **Realize as migrations e os seeders**
