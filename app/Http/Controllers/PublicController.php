@@ -100,7 +100,7 @@ class PublicController extends Controller
             "finalidade" => "required"
         ]);
         
-        if(Mail::to('gabrielf.04.2002@gmail.com')
+        if(Mail::to(env('MAIL_FROM_ADDRESS'))
         ->send(new AnunciarMailable($request->all()))){
             return redirect()->route('anunciar.show')->with('sucesso', 'Email enviado');
         }
