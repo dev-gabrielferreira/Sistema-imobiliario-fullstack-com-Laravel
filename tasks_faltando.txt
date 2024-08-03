@@ -1,0 +1,2 @@
+testar envio de email e outras coisas
+verificar aplicação de seed e factories

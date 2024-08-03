@@ -1,0 +1,1 @@
+<p class="my-4 py-[5px] w-6/12 bg-green-300 rounded-md px-2 max-[700px]:w-[80%]">{{$mensagem}}</p>
