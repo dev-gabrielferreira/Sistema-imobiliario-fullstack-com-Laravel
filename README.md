@@ -1,6 +1,6 @@
 # Projeto fullstack de sistema imobiliário
 
-Projeto de sistema de imóveis incluido com painel admin
+Projeto de sistema de imóveis incluido com painel admin, recuperação de senha, envio de email e crud completo
 
 ## Instalação
 
@@ -18,13 +18,14 @@ Projeto de sistema de imóveis incluido com painel admin
    composer install
 
 4. **Crie o arquivo `.env` a partir do exemplo:**
+    preencha as sessões de DB e MAIL com suas informações
 
-5. **Realize as migrations e os seeders**
+6. **Realize as migrations e os seeders**
     ```bash
     php artisan migrate
     php artisan db:seed
 
-6. **Inicialize o projeto**
+7. **Inicialize o projeto**
     ```bash
     php artisan serve
 
