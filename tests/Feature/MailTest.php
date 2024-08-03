@@ -28,7 +28,7 @@ class MailTest extends TestCase
         $response->assertStatus(302);
 
         Mail::assertSent(AnunciarMailable::class, function ($mail) {
-            if (!$mail->hasTo('gabrielf.04.2002@gmail.com')) {
+            if (!$mail->hasTo(env('MAIL_FROM_ADDRESS'))) {
                 return false;
             }
     
