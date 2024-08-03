@@ -29,7 +29,7 @@ class ResetPasswordMailable extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('gabrielf.04.2002@gmail.com', 'Gabriel Ferreira'),
+            from: new Address(env('MAIL_FROM_ADDRESS'), 'Gabriel Ferreira'),
             subject: 'Nova senha',
         );
     }
