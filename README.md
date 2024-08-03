@@ -22,6 +22,7 @@ Projeto de sistema de imóveis incluido com painel admin, recuperação de senha
    ```bash
    touch .env
    cp .env.example .env
+   php artisan key:generate
    ```
     preencha as sessões de DB e MAIL com suas informações
 
@@ -30,7 +31,12 @@ Projeto de sistema de imóveis incluido com painel admin, recuperação de senha
     php artisan migrate
     php artisan db:seed
 
-7. **Inicialize o projeto**
+7. **Crie link para as imagens**
+
+   ```bash
+   php artisan storage:link
+
+8. **Inicialize o projeto**
     ```bash
     php artisan serve
 
